@@ -76,35 +76,12 @@ a:visited{
     margin: 40px 130px;
 }
 
-.sides
-{
-    position: relative;
-    display: inline-block;
+
+.what-we-do{
+    padding: 10%;
 }
 
-.overlay 
-{
-    position: absolute;
-    top: 10%;
-    background-color: rgba(48, 18, 78, 1);
-    width: 377px;
-    height: 504px;
-    display: flex;
-    flex-direction: column;
-}
-
-.future {
+.what-we-do .icons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-.future .future-article{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.future .future-article button {
-    width: 100px;
 }
