@@ -1,1 +1,110 @@
-﻿
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 99px;
+    color: white;
+}
+
+h2{
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 45px;
+}
+
+h4{
+    font-size: 36px;
+}
+
+h5{
+    font-size: 27px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+
+
+header{
+    height: 828px;
+    background-image: url("images/hm1.png");
+    background-color: rgba(94, 35, 157, 1);
+    background-blend-mode: overlay;
+}
+
+
+
+li{
+    list-style-type:none;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 130px;
+}
+
+.sides
+{
+    position: relative;
+    display: inline-block;
+}
+
+.overlay 
+{
+    position: absolute;
+    top: 10%;
+    background-color: rgba(48, 18, 78, 1);
+    width: 377px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+}
+
+.future {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.future .future-article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.future .future-article button {
+    width: 100px;
+}
