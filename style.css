@@ -22,6 +22,7 @@ h4{
 
 h5{
     font-size: 27px;
+    color: white;
 }
 
 h6{
@@ -85,3 +86,29 @@ a:visited{
     display: flex;
     flex-direction: row;
 }
+
+
+.features
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column; 
+}
+
+.features article 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.features article h5, .features article p
+{
+    width: 40%;
+}
+
+.features  .picture {
+    grid-row: span 4;
+  }
