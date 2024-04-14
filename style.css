@@ -1,11 +1,22 @@
-﻿*{
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@500&family=M+PLUS+1p:wght@400;500;700;900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
 }
 
+body{
+    font-family: "M PLUS 1p", sans-serif;
+}
 h1 {
     font-size: 99px;
     color: white;
+    font-weight: 900;
+}
+
+h2, h3, h4, h5, h6
+{
+    font-weight: 500;
 }
 
 h2{
@@ -14,6 +25,7 @@ h2{
 
 h3 {
     font-size: 45px;
+    color: rgba(48, 35, 61, 1);
 }
 
 h4{
@@ -45,12 +57,12 @@ nav ul{
 }
 
 
-header{
+header {
     height: 828px;
-    background-image: url("images/hm1.png");
+    background-image: url("images/hm1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
     background-color: rgba(94, 35, 157, 1);
-    background-blend-mode: overlay;
-}
+    background-blend-mode:overlay;
+  }
 
 
 
@@ -111,4 +123,95 @@ a:visited{
 
 .features  .picture {
     grid-row: span 4;
-  }
+    position: relative;
+}
+
+
+.features  .picture img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.features .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(246, 16, 103, 1);
+    mix-blend-mode: overlay;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    text-align: center;
+}
+
+.numbers .nums{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 10%;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    height: 648px;
+}
+
+.logos img{
+    width: 50%;
+
+}
+
+.logos div{
+    background-color: rgba(48, 18, 78, 1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logos .table{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logos .table p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+    visibility: hidden;
+}
+
+.newsteller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+}
+
+.newsteller form{
+    display: flex;
+    box-shadow: 0px 3px 1px rgba(244, 244, 237, 1);
+}
+
+.newsteller form input{
+    padding: 10px;
+    border: none;
+}
+
+.newsteller form button{
+    padding: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-color: rgba(244, 244, 237, 1);
+    cursor: pointer;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(242, 242, 242, 0.5) 100% );
+
+}
