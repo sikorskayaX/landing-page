@@ -49,9 +49,6 @@ h6 {
 }
 
 
-
-
-
 .title-small-pink {
   font-size: 0.7rem; /* unchanged */
   letter-spacing: 0.333rem; /* 6px / 18px */
@@ -189,21 +186,38 @@ a:visited {
 }
 
 
+.regular{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 /*intro*/
 
 
 .what-we-do {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 10%; /* unchanged */
+}
+
+.what-we-do article .txt{
+  width: 42rem;
+  margin-bottom: 4rem;
 }
 
 .what-we-do .icons {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.what-we-do .icons svg{
+  margin: 1rem 0;
 }
 
 .what-we-do .icons div{
   width: 20rem;
-  margin-right: 2rem;
 }
 
 
@@ -222,10 +236,7 @@ a:visited {
   align-items: center;
   justify-content: space-around;
   color: white;
-}
-
-.features article h5, .features article p {
-  width: 40%; /* unchanged */
+  padding: 10% 0;
 }
 
 .features .picture {
@@ -235,8 +246,8 @@ a:visited {
 
 .features .picture img {
   display: block;
-  width: 100%; /* unchanged */
-  height: auto; /* unchanged */
+  width: 23rem; /* unchanged */
+  height: 64rem; /* unchanged */
 }
 
 .features .overlay {
@@ -247,6 +258,19 @@ a:visited {
   height: 100%; /* unchanged */
   background-color: rgba(246, 16, 103, 1);
   mix-blend-mode: multiply;
+}
+
+.features .open{
+  margin-left: 10%;
+}
+
+.features .buis{
+  color: white;
+  width: 20%;
+}
+
+.features .pbuis{
+  width: 35%;
 }
 
 /*numbers*/
@@ -542,3 +566,80 @@ a:visited {
     font-weight: 800;
     margin-bottom: 2rem;
   }
+
+
+  /* Add this at the end of your CSS file */
+
+/* Media query for screens with a maximum width of 360px */
+@media only screen and (max-width: 360px) {
+  /* Adjust the font sizes for smaller screens */
+  h1 {
+      font-size: 4rem; /* Adjusted for smaller screens */
+  }
+  h2 {
+      font-size: 2.5rem;
+  }
+  h3 {
+      font-size: 2rem;
+  }
+  h4 {
+      font-size: 1.5rem;
+  }
+  h5 {
+      font-size: 1.2rem;
+  }
+  h6, .title-small-pink, .title-small-dark, .title-medium, .title-large, .text-small {
+      font-size: 0.8rem;
+  }
+
+  /* Adjust the padding and margins for smaller screens */
+  .what-we-do {
+      padding: 5%;
+  }
+  .features article, .features .picture {
+      padding: 2%;
+  }
+  .numbers .nums {
+      flex-direction: column;
+      width: 100%;
+  }
+  .logos {
+      flex-direction: column;
+  }
+  .logos .pic, .logos .table {
+      width: 100%;
+  }
+  .testimonials div {
+      height: auto;
+  }
+  .newsteller form input {
+      width: 100%;
+  }
+  .newsteller form button {
+      width: 100%;
+  }
+
+  /* Adjust navigation and header layout for smaller screens */
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  nav ul li {
+      margin-bottom: 1rem;
+  }
+  .main {
+      flex-direction: column;
+      padding-left: 2rem;
+  }
+
+  /* Adjust footer layout for smaller screens */
+  footer .ftr {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  footer .ftr ul {
+      align-items: center;
+      text-align: center;
+  }
+}
