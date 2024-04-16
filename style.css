@@ -15,6 +15,9 @@ body {
 h1 {
   font-size: 5.5rem; /* unchanged */
   font-weight: 900;
+  background: linear-gradient(to bottom, white 50%, rgba(246, 16, 103) 50%);
+  background-clip: text;
+  color: transparent;
 }
 
 h2, h3, h4, h5, h6 {
@@ -45,18 +48,9 @@ h6 {
   font-size: 1rem; /* unchanged */
 }
 
-.logo {
-  font-size: 1.333rem; /* unchanged */
-  letter-spacing: 0.111rem; /* 2px / 18px */
-  font-weight: 800;
-}
 
-.title-small {
-  transform: rotate(90deg);
-  font-size: 0.7rem; /* unchanged */
-  letter-spacing: 0.333rem; /* 6px / 18px */
-  font-weight: 800;
-}
+
+
 
 .title-small-pink {
   font-size: 0.7rem; /* unchanged */
@@ -90,32 +84,64 @@ h6 {
   color: rgba(119, 108, 130, 1);
 }
 
+/*navigation*/
+
+header {
+  height: 46rem; 
+  background-image: url("images/hm1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+  background-color: rgba(94, 35, 157, 1);
+  background-blend-mode: multiply;
+}
+
+
+header .wind{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: none;
+  height: 8rem;
+  width: 58%;
+  padding: 3rem;
+  margin-top: 3rem;
+  
+}
+
+header .wind p{
+  padding-left: 5.2rem;
+}
+
+.logo {
+  font-size: 1.333rem; /* unchanged */
+  letter-spacing: 0.111rem; /* 2px / 18px */
+  font-weight: 800;
+}
+
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2.778rem 0; /* 50px / 18px */
+  padding: 3.4rem 0 8.2rem 0; 
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   gap: 4.444rem; /* 80px / 18px */
 }
 
 nav ul li {
+  display: flex;
+  align-items: center;
   font-size: 0.8rem; /* unchanged */
   font-weight: 700;
   letter-spacing: 0.056rem; /* 1px / 18px */
 }
 
-header {
-  height: 46rem; /* unchanged */
-  background-image: url("images/hm1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-  background-color: rgba(94, 35, 157, 1);
-  background-blend-mode: overlay;
-}
+
 
 li {
   list-style-type: none;
@@ -130,13 +156,41 @@ a:visited {
   color: white;
 }
 
-.main {
+.main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2.222rem 7.222rem; /* 40px / 18px, 130px / 18px */
+  padding-left: 8.2rem; 
 }
+
+
+.title-small {
+  
+  font-size: 0.7rem; /* unchanged */
+  letter-spacing: 0.333rem; /* 6px / 18px */
+  font-weight: 800;
+}
+
+.main .scroll{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19rem;
+  transform: rotate(90deg);
+}
+
+
+.main div div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px;
+}
+
+
+/*intro*/
+
 
 .what-we-do {
   padding: 10%; /* unchanged */
@@ -146,6 +200,12 @@ a:visited {
   display: flex;
   flex-direction: row;
 }
+
+.what-we-do .icons div{
+  width: 20rem;
+  margin-right: 2rem;
+}
+
 
 /*features*/
 
@@ -186,8 +246,10 @@ a:visited {
   width: 100%; /* unchanged */
   height: 100%; /* unchanged */
   background-color: rgba(246, 16, 103, 1);
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
 }
+
+/*numbers*/
 
 .numbers {
   display: flex;
@@ -205,14 +267,20 @@ a:visited {
   margin-top: 10%; /* unchanged */
 }
 
+
+/*logos*/
+
 .logos {
   display: flex;
   flex-direction: row;
   height: 36rem; /* 648px / 18px */
 }
 
-.logos img {
-  width: 50%; /* unchanged */
+.logos .pic {
+  background-image: url(images/hm4.png);
+  background-size: 100%;
+  background-color: rgb(48, 18, 78, 1);
+  background-blend-mode: darken;
 }
 
 
@@ -222,6 +290,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 5rem;
   }
   
   .logos .table {
@@ -424,6 +493,8 @@ a:visited {
   }
 
   .newsteller form button {
+    display: flex;
+    align-items: center;
     width: 12.rem;
     padding: 0.556rem; 
     border-top: none;
