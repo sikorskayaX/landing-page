@@ -85,7 +85,7 @@ h6 {
 
 header {
   height: 46rem; 
-  background-image: url("images/hm1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+  background-image: url("../images/hm1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
   background-color: rgba(94, 35, 157, 1);
   background-blend-mode: multiply;
 }
@@ -301,7 +301,7 @@ a:visited {
 }
 
 .logos .pic {
-  background-image: url(images/hm4.png);
+  background-image: url(../images/hm4.png);
   background-size: 100%;
   background-color: rgb(48, 18, 78, 1);
   background-blend-mode: darken;
@@ -359,7 +359,7 @@ a:visited {
 
   
   .testimonials .pics:nth-of-type(1) {
-    background-image: url('images/h6.png');
+    background-image: url('../images/h6.png');
     background-size: 100%;
     width: 4.278rem; /* 77px / 18px */
     height: 4.278rem;
@@ -373,7 +373,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(2) {
-    background-image: url('images/h7.png');
+    background-image: url('../images/h7.png');
     background-size: 100%;
     width: 5.833rem; 
     height: 5.833rem;
@@ -386,7 +386,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(3) {
-    background-image: url('images/h4.png');
+    background-image: url('../images/h4.png');
     background-size: 100%;
     width: 3.556rem; 
     height: 3.556rem; 
@@ -399,7 +399,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(4) {
-    background-image: url('images/h5.png');
+    background-image: url('../images/h5.png');
     background-size: 100%;
     width: 4.5rem; /* 81px / 18px */
     height: 4.5rem; /* 81px / 18px */
@@ -412,7 +412,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(5) {
-    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('images/h3.png');
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('../images/h3.png');
     background-size: 100%;
     width: 3.111rem; /* 56px / 18px */
     height: 3.111rem;
@@ -425,7 +425,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(6) {
-    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('images/h2.png');
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('../images/h2.png');
     background-size: 100%;
     width: 4.056rem; /* 73px / 18px */
     height: 4.056rem;
@@ -439,7 +439,7 @@ a:visited {
   }
   
   .testimonials .pics:nth-of-type(7) {
-    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('images/h1.png');
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('../images/h1.png');
     background-size: 100%;
     width: 5.111rem; /* 92px / 18px */
     height: 5.111rem;

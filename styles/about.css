@@ -149,7 +149,7 @@ h6 {
 
 header div{
     height: 20rem; 
-    background-image: url("images/ap1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+    background-image: url("../images/ap1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
     background-color: rgba(94, 35, 157, 1);
     background-blend-mode: multiply;
     display: flex;
@@ -230,7 +230,6 @@ header div{
 .what-we-do .second-part {
     background-color: rgba(48, 18, 78, 1);
     height: 53rem;
-    padding-left: 8.2rem; 
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -238,4 +237,90 @@ header div{
 
 .what-we-do .second-part div{
     display: flex;
+    justify-content: space-between;
+    padding: 10rem 15rem 0 8.2rem;
 }
+
+.what-we-do .second-part div h5{
+    color: white;
+    width: 14.7rem;
+}
+
+.what-we-do .second-part div p{
+    color: white;
+    font-size: 1rem;
+    width: 20rem;
+}
+
+/*clients*/
+
+
+.clients div:nth-child(1){
+    padding: 10rem 8.2rem; 
+}
+
+.clients div aside{
+    background-color: rgba(21, 4, 51, 1);
+    height: 38rem;
+    width: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+}
+
+.clients div aside p{
+    margin-top: 2rem;
+    color: rgba(252, 252, 252, 1);
+
+}
+
+ .table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ .table p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+    visibility: hidden;
+  }
+
+  .logos div {
+    width: 50%; /* unchanged */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  /*props*/
+
+
+  .props{
+    background-color: rgba(48, 18, 78, 1);
+    padding: 10rem 8.2rem;
+  }
+  .props .what-head h5{
+    padding: 1rem 0;
+    width: 42rem;
+    color: white;
+  }
+  .props .blocks{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    
+  }
+
+
+  .props .blocks div{
+    background-color: rgba(48, 18, 78, 1);
+    width: 20rem;
+    height: 19rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 6% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
