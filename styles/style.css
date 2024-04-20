@@ -67,6 +67,7 @@ h6 {
   font-size: 1rem; /* unchanged */
   letter-spacing: 0.222rem; /* 4px / 18px */
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .text-super-small{
