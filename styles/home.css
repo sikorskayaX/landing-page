@@ -61,6 +61,12 @@ nav ul li {
     color: white;
   }
 
+  nav ul li:nth-child(1){
+    text-decoration: underline rgba(252, 252, 252, 1);
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 1px;
+  }
+
 /*main*/
 
 .main{

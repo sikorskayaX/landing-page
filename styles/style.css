@@ -147,6 +147,14 @@ nav ul li {
 
 }
 
+
+nav ul li:nth-child(1){
+  text-decoration: underline rgba(48, 35, 61, 1);
+  text-underline-offset: 0.8rem;
+  text-decoration-thickness: 1px;
+}
+
+
 a:link {
   text-decoration: none;
   color: rgba(48, 35, 61, 1);
@@ -155,6 +163,8 @@ a:link {
 a:visited {
   color: rgba(48, 35, 61, 1);
 }
+
+
 
 /*newsletter*/
   
@@ -213,23 +223,25 @@ footer{
   background-color: rgba(21, 4, 51, 1);
 }
 
-
-  
   
 footer .ftr{
   display: flex;
   justify-content: space-between;
-  padding: 8.2rem;
+  padding: 8.2rem 8.2rem 0 8.2rem;
 }
   
 
 footer .ftr div{
   width: 9rem;
-  
+}
+
+footer .ftr div .logo{
+  padding-bottom: 2rem;
 }
 
   
 footer .ftr ul {
+  margin-left: 7rem;
   font-size: 0.7rem;
   font-weight: 700;
 }
@@ -241,11 +253,17 @@ footer .ftr ul li{
 
 footer .ftr ul li svg{
   margin-right: 1.5rem;
-  
 }
   
 footer .ftr ul .name{
   letter-spacing: 6px;
   font-weight: 800;
   margin-bottom: 2rem;
+  text-decoration: underline rgba(246, 16, 103, 1);
+  text-underline-offset: 0.8rem;
+}
+
+footer .text-super-small{
+  align-self: center;
+  margin-top: 3rem;
 }
