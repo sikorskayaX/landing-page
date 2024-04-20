@@ -1,102 +1,108 @@
 ﻿@import url("style.css");
     
-    header .wind{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-left: none;
-      height: 8rem;
-      width: 58%;
-      padding: 3rem;
-      margin-top: 3rem;
-      
-    }
-    
-    header .wind p{
-      padding-left: 5.2rem;
-    }
-    
+header .wind{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: none;
+  height: 8rem;
+  width: 58%;
+  padding: 3rem;
+  margin-top: 3rem;
   
-  header div{
-      height: 20rem; 
-      background-image: url("../images/s1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-      background-color: rgba(94, 35, 157, 1);
-      background-blend-mode: multiply;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-  
-    header div h2{
-      padding-left: 8.2rem;
-      margin-bottom: 1rem;
-    }
-  
-    header div p{
-      padding-left: 8.2rem;
-    }
+}
 
+header .wind p{
+  padding-left: 5.2rem;
+}
 
-    /*numbers*/
+header div{
+  height: 20rem; 
+  background-image: url("../images/s1.png"), linear-gradient(90deg, #5E239D 0%, rgb(196,196,196, 0) 56.77%);
+  background-color: rgba(94, 35, 157, 1);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header div h2{
+  padding-left: 8.2rem;
+  margin-bottom: 1rem;
+}
+
+header div p{
+  padding-left: 8.2rem;
+}
+
+/*background map*/ 
+
+.map  {
+  position: absolute;
+  top: 40rem;
+  z-index: 0;
+}
+
+/*numbers*/
 
 .numbers {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%; /* unchanged */
+    padding: 10%;
     text-align: center;
   }
 
-  .numbers h5{
-    padding-top: 1rem;
-    width: 42rem;
-  }
-  
-  .numbers .nums {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 70%; /* unchanged */
-    margin-top: 10%; /* unchanged */
-  }
-  
-
-  /*services*/
-
-  .services{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hat{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .services .icons{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 8.2rem;
-  }
-
-  .services .icons div{
-    width: 18rem;
-    margin: 2rem;
-  }
-
-  .services .icons div p{
-    color: rgba(119, 108, 130, 1);
-  }
-
-
-  /*what-we-do*/
-.what-we-do .hat{
-    padding: 10rem;
+.numbers h5{
+  padding-top: 1rem;
+  width: 42rem;
+  z-index: 1;
 }
+
+.numbers .nums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%; 
+  margin-top: 10%; 
+  z-index: 1;
+
+}
+
+/*services*/
+.services{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding-bottom: 5rem;
+}
+
+.hat{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 3rem 0;
+  width: 31rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services .icons{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8.2rem;
+}
+.services .icons div{
+  width: 18rem;
+  margin: 2rem;
+}
+.services .icons div p{
+  color: rgba(119, 108, 130, 1);
+}
+
+/*what-we-do*/
 
 .what-we-do .blocks{
     display: flex;
@@ -106,19 +112,30 @@
 
 .what-we-do .blocks .block{
     display: flex;
-    padding-bottom: 5rem;
+    padding: 3rem 0;
 }
 
 
 .what-we-do .blocks .block img{
-    width: 40rem;
-    height: 25rem;
+    width: 49%;
+    height: auto;
 }
 
-.what-we-do .blocks .block:nth-child(odd) {
-    padding-left: 8.2rem;
+.what-we-do .blocks .block .elem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 51%;
+  padding: 9rem 8.2rem;
 }
 
-.what-we-do .blocks .block:nth-child(even) {
-    padding-right: 8.2rem;
+
+.what-we-do .blocks .block .elem p{
+  width: 25.5rem;
 }
+
+.what-we-do .blocks .block .elem h5{
+  width: 25.5rem;
+  margin-bottom: 1rem;
+}
+
