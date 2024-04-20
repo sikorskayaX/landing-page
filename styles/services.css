@@ -71,12 +71,6 @@ header div p{
 }
 
 /*services*/
-.services{
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  padding-bottom: 5rem;
-}
 
 .hat{
   display: flex;
@@ -89,17 +83,28 @@ header div p{
   margin-right: auto;
 }
 
+.services{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding-bottom: 5rem;
+}
+
+
 .services .icons{
   display: flex;
   flex-wrap: wrap;
-  padding: 0 8.2rem;
+  padding-left: 8.2rem;
 }
+
 .services .icons div{
   width: 18rem;
-  margin: 2rem;
+  margin: 2rem 7rem 2rem 0;
 }
-.services .icons div p{
-  color: rgba(119, 108, 130, 1);
+
+
+.services .icons div h6{
+  margin: 1rem 0;
 }
 
 /*what-we-do*/
