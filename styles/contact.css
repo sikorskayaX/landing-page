@@ -17,14 +17,6 @@
       padding-left: 5.2rem;
     }
     
-    .logo {
-      font-size: 1.333rem; /* unchanged */
-      letter-spacing: 0.111rem; /* 2px / 18px */
-      font-weight: 800;
-      color: rgba(48, 35, 61, 1);
-    }
-    
-    
   
   header div{
       height: 20rem; 
@@ -52,10 +44,15 @@
 
 /*intro*/
 .intro{
+    height: 77rem;
     position: relative;
+    background-color: rgba(48, 18, 78, 1);
 }
 
 .intro .contacts{
+    width: 50%;
+    background-color: white;
+    height: 46rem;
     padding: 6rem 8.2rem;
 }
 
@@ -74,9 +71,6 @@
     flex-direction: column;
 }
 
-.intro div{
-    position: relative;
-}
 
 .intro .pic{
     background-size: 100%;
@@ -84,7 +78,7 @@
     right: 0%;
     top: 0%;
     height: 68rem; 
-    width: 40rem;
+    width: 50%;
     background-image: url("../images/c2.png");
     background-color: rgba(246, 16, 103, 1);
     background-blend-mode: multiply;
@@ -93,25 +87,70 @@
 
 }
 
-.intro .back{
-    height: 31rem;
-    width: 100%;
+/*contact form*/
+
+.contact{
     position: absolute;
-    top: 50rem;
-    background-color: rgba(48, 18, 78, 1);
-    z-index: 1;
-}
-
-
-.intro .contact{
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 27rem;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
     background-color: rgba(21, 4, 51, 1);
     height: 40rem;
     width: 64rem;
     z-index: 3;
+    padding: 5.5rem;
+
+}
+
+.contact h5 {
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.contact form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form div:first-child {
+  width: 20rem;
+  margin-bottom: 5rem;
+}
+
+
+.contact form div:last-child {
+  width: 31rem;
+}
+
+.contact form div:first-child input{
+  height: 3rem;
+  margin: 1rem 0 2rem 0;
+  padding: 1rem;
+}
+
+
+.contact form div:last-child input{
+  margin-top: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
+
+
+
+.contact button {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  width: 12rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: rgba(246, 16, 103, 1);
+  color: rgba(252, 252, 252, 1);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
 }
