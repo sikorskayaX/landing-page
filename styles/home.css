@@ -9,23 +9,6 @@ header {
   }
   
   
-header .wind{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-left: none;
-    height: 8rem;
-    width: 58%;
-    padding: 3rem;
-    margin-top: 3rem;
-    
-}
-  
-  header .wind p{
-    padding-left: 5.2rem;
-  }
-  
 /*navigation dark*/
   
 nav {
@@ -48,24 +31,23 @@ nav ul li {
 
 }
   
-  li {
-    list-style-type: none;
-  }
-  
-  a:link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:visited {
-    color: white;
-  }
+li {
+  list-style-type: none;
+}
 
-  nav ul li:nth-child(1){
-    text-decoration: underline rgba(252, 252, 252, 1);
-    text-underline-offset: 0.8rem;
-    text-decoration-thickness: 1px;
-  }
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+nav ul li:nth-child(1){
+  text-decoration: underline rgba(252, 252, 252, 1);
+  text-underline-offset: 0.8rem;
+  text-decoration-thickness: 1px;
+}
 
 /*main*/
 
@@ -77,15 +59,17 @@ nav ul li {
     padding-left: 8.2rem; 
   }
   
-  
-  
-  
   .main .scroll{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 19rem;
     transform: rotate(90deg);
+  }
+  
+    
+  .main .scroll svg{
+    transform: rotate(-90deg);
   }
   
   
@@ -95,8 +79,24 @@ nav ul li {
     justify-content: space-between;
     border: 1px;
   }
+
+
+.wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: none;
+    height: 8rem;
+    width: 58%;
+    padding: 3rem;
+    margin-top: 3rem;
+    
+}
   
-  
+.wind p{
+  padding-left: 5.2rem;
+} 
   
   
   /*intro*/
@@ -181,6 +181,7 @@ nav ul li {
     width: 35%;
   }
   
+
   /*numbers*/
   
   .numbers {
@@ -215,80 +216,5 @@ nav ul li {
     background-blend-mode: darken;
     width: 50%;
   }
-  
-  
-  
-  /* Media query for screens with a maximum width of 360px */
-  @media only screen and (max-width: 360px) {
-    /* Adjust the font sizes for smaller screens */
-    h1 {
-        font-size: 4rem; /* Adjusted for smaller screens */
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    h4 {
-        font-size: 1.5rem;
-    }
-    h5 {
-        font-size: 1.2rem;
-    }
-    h6, .title-small-pink, .title-small-dark, .title-medium, .title-large, .text-small {
-        font-size: 0.8rem;
-    }
-  
-    /* Adjust the padding and margins for smaller screens */
-    .what-we-do {
-        padding: 5%;
-    }
-    .features article, .features .picture {
-        padding: 2%;
-    }
-    .numbers .nums {
-        flex-direction: column;
-        width: 100%;
-    }
-    .logos {
-        flex-direction: column;
-    }
-    .logos .pic, .logos .table {
-        width: 100%;
-    }
-    .testimonials div {
-        height: auto;
-    }
-    .newsteller form input {
-        width: 100%;
-    }
-    .newsteller form button {
-        width: 100%;
-    }
-  
-    /* Adjust navigation and header layout for smaller screens */
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin-bottom: 1rem;
-    }
-    .main {
-        flex-direction: column;
-        padding-left: 2rem;
-    }
-  
-    /* Adjust footer layout for smaller screens */
-    footer .ftr {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    footer .ftr ul {
-        align-items: center;
-        text-align: center;
-    }
-  }
+
   

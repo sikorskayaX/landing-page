@@ -48,7 +48,6 @@ h6 {
   font-size: 1rem; /* unchanged */
 }
 
-
 span{
   font-size: 1rem;
   font-style: normal;
@@ -94,6 +93,16 @@ span{
   font-size: 1.2rem;
 }
 
+.text-testimonials{
+  width: 60%;
+  color: rgba(48, 35, 61, 1);
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+
 .logo {
   font-size: 1.333rem; /* unchanged */
   letter-spacing: 0.111rem; /* 2px / 18px */
@@ -127,6 +136,29 @@ span{
 }
 
 
+@media only screen and (max-width: 360px) {
+  /* Adjust the font sizes for smaller screens */
+  h1 {
+      font-size: 4rem; /* Adjusted for smaller screens */
+  }
+  h2 {
+      font-size: 2.5rem;
+  }
+  h3 {
+      font-size: 2rem;
+  }
+  h4, .text-testimonials {
+      font-size: 1.5rem;
+  }
+  h5 {
+      font-size: 1.2rem;
+  }
+  h6, .title-small-pink, .title-small-dark, .title-medium, .title-large, .text-small {
+      font-size: 0.8rem;
+  }
+}
+
+
 /*navigation light*/
 
 nav {
@@ -157,6 +189,27 @@ a:visited {
   color: rgba(48, 35, 61, 1);
 }
 
+@media only screen and (max-width: 360px) {
+  nav{
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 1rem;
+    align-items: center;
+  }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li{
+    margin-top: 1rem;
+  }
+
+  nav ul li:last-child{
+    visibility: hidden;
+  }
+
+}
 
 
 /*newsletter*/
@@ -204,6 +257,32 @@ a:visited {
   border-color: rgba(244, 244, 237, 1);
   cursor: pointer;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(242, 242, 242, 0.5) 100%);
+}
+
+
+@media only screen and (max-width: 360px) {
+  .newsletter{
+    margin: 3rem;
+  }
+
+  .newsletter form input {
+    width: 14rem;
+    padding: 1rem; 
+  }
+
+  .newsletter form button {
+    width: 5rem;
+    padding: 1rem; 
+  }
+
+  .newsletter form button p{
+    display: none;
+  }
+
+  ::placeholder{
+    font-size: 0.7rem; 
+  }
+
 }
 
 /* Testimonials */
@@ -326,20 +405,27 @@ a:visited {
   box-shadow: 0 0 20px rgba(0, 240, 181, 0.25);
 }
 
+.testimonials blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+
 .testimonials blockquote .quote{
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.testimonials blockquote .quote p{
-  width: 60%;
-  color: rgba(48, 35, 61, 1);
-  font-family: "Noticia Text", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2rem;
-}
+
+
 .testimonials .big{
   font-size: 10rem;
   color: rgba(246, 16, 103, 1);
@@ -356,18 +442,21 @@ a:visited {
   font-weight: 800;
 }
 
-.testimonials blockquote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-}
+
     
+
+@media only screen and (max-width: 360px) {
+  .testimonials{
+    height: 40rem;
+  }
+  .testimonials blockquote {
+    margin-top: -5rem;
+}
+
+  .testimonials .pics, img{
+    display: none;
+  }
+}
   
 
   
@@ -416,12 +505,10 @@ footer .ftr ul li a:visited{
   color: rgba(252, 252, 252, 1);
 }
 footer .ftr ul li div{
-  display: flex;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-footer .ftr ul li svg{
-  margin-right: 1.5rem;
-}
   
 footer .ftr ul .name{
   letter-spacing: 6px;
@@ -434,6 +521,29 @@ footer .ftr ul .name{
 footer .text-super-small{
   align-self: center;
   margin-top: 3rem;
+}
+
+
+@media only screen and (max-width: 360px) {
+  footer{
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  footer .ftr{
+    padding: 0;
+    flex-direction: column;
+  }
+
+  footer .ftr ul{
+    padding-top: 3rem;
+  }
+
+  footer .ftr ul {
+    margin: 0;
+  }
 }
 
 /*hat*/
