@@ -38,33 +38,49 @@
       padding-left: 8.2rem;
     }
 
+/*intro*/
 
-    /*hat*/
+.intro{
+  padding-top: 5rem;
+}
 
-.hat{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    }
-
-.regular-bold{
-    font-weight: 800;
-    font-size: 1rem;
-    width: 31rem;
-    color: rgba(48, 35, 61, 1);
+.background{
+  background-color: rgba(21, 4, 51, 1);
+  height: 60rem;
+  position: absolute;
+  top: 67rem;
+  width: 100%;
+  z-index: 1;
 }
 
 /*team*/
 
 .team{
+    position: relative; 
     display: flex;
     padding: 2rem 8.2rem;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    z-index: 2;
 }
 
 .team .person{
     margin: 5rem 2rem;
+}
+
+.team .person .title-small{
+  margin-top: 1rem;
+}
+
+.team .person div{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 10rem;
+}
+
+/*testimonials*/
+
+.testimonials{
+  margin-top: -10rem;
 }

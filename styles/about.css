@@ -1,60 +1,48 @@
 ﻿@import url("style.css");
 
 header .wind{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-left: none;
-    height: 8rem;
-    width: 58%;
-    padding: 3rem;
-    margin-top: 3rem;
-    
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-left: none;
+  height: 8rem;
+  width: 58%;
+  padding: 3rem;
+  margin-top: 3rem;
   
-  header .wind p{
-    padding-left: 5.2rem;
-  }
+}
+
+header .wind p{
+  padding-left: 5.2rem;
+}
   
 
 
 header div{
-    height: 20rem; 
-    background-image: url("../images/ap1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-    background-color: rgba(94, 35, 157, 1);
-    background-blend-mode: multiply;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  height: 20rem; 
+  background-image: url("../images/ap1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196,196, 196, 0) 56.77%);
+  background-color: rgba(94, 35, 157, 1);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header div h2{
+  padding-left: 8.2rem;
+  margin-bottom: 1rem;
+}
+header div p{
+  padding-left: 8.2rem;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8.2rem; 
+}
 
-
-  header div h2{
-    padding-left: 8.2rem;
-    margin-bottom: 1rem;
-  }
-
-  header div p{
-    padding-left: 8.2rem;
-  }
-
-  .main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 8.2rem; 
-  }
-  
-  
-  .title-small {
-    
-    font-size: 0.7rem; /* unchanged */
-    letter-spacing: 0.333rem; /* 6px / 18px */
-    font-weight: 800;
-  }
-  
 
   /*intro*/
 
@@ -115,13 +103,10 @@ header div{
 }
 
 .what-we-do .second-part div h5{
-    color: white;
     width: 14.7rem;
 }
 
 .what-we-do .second-part div p{
-    color: white;
-    font-size: 1rem;
     width: 20rem;
 }
 
@@ -170,39 +155,22 @@ header div{
   display: flex;
 }
 
-.clients .table {
-  margin-left: 46rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 8rem;
-}
-
-
-.clients .table svg{
-  margin-top: 5rem;
-}
-
-.clients .table p:nth-of-type(2) {
-  grid-column: 2;
-  grid-row: 1;
-  visibility: hidden;
-}
 
   /*props*/
 
-
   .props{
+    position: relative;
     background-color: rgba(48, 18, 78, 1);
     padding: 10rem 8.2rem;
+    z-index: 1;
   }
+
   .props .what-head h5{
     padding: 1rem 0;
     width: 42rem;
     color: white;
   }
+
   .props .blocks{
     display: flex;
     justify-content: space-between;
@@ -222,8 +190,8 @@ header div{
     justify-content: space-between;
   }
 
-  /*testimonials*/
+/*testimonials*/
 
-  .testimonials{
-    height: 50rem;
-  }
+.testimonials{
+  margin-top: -15rem;
+}
