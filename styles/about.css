@@ -161,6 +161,10 @@ header .title-picture{
 
 @media only screen and (max-width: 360px) {
 
+  .clients{
+    height: auto;
+  }
+
   .clients aside{
     height: auto;
     margin: 0;
@@ -172,9 +176,6 @@ header .title-picture{
     padding:2rem ; 
 }
 
-.clients .table{
-  height: 30rem;
-}
 
 }
 

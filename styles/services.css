@@ -40,6 +40,21 @@ header .title-picture{
 
 }
 
+@media only screen and (max-width: 360px) {
+
+  .numbers h5{
+    width: auto;
+  }
+
+  .numbers .nums {
+    flex-direction: column;
+  }
+  .hat{
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+}
+
 /*services*/
 
 .services{
@@ -65,6 +80,24 @@ header .title-picture{
 
 .services .icons div h6{
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 360px) {
+
+  .services{
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .services .icons{
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .services .icons div{
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 /*what-we-do*/
@@ -104,5 +137,26 @@ header .title-picture{
   margin-bottom: 1rem;
 }
 
+
+@media only screen and (max-width: 360px) {
+
+  .what-we-do .blocks .block{
+    flex-direction: column;
+}
+
+.what-we-do .blocks .block img, .what-we-do .blocks .block .elem{
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.what-we-do .blocks .block .elem p, .what-we-do .blocks .block .elem h5{
+  width: auto;
+  margin: 1rem;
+  
+}
+
+
+}
 
 

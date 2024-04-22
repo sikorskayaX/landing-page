@@ -153,7 +153,10 @@ span{
   h5 {
       font-size: 1.2rem;
   }
-  h6, .title-small-pink, .title-small-dark, .title-medium, .title-large, .text-small {
+  h6{
+    font-size: 1rem;
+  }
+  .title-small-pink, .title-small-dark, .title-medium, .title-large, .text-small {
       font-size: 0.8rem;
   }
 }
@@ -486,7 +489,7 @@ header .title-picture p{
     margin-top: -5rem;
 }
 
-  .testimonials .pics, img{
+  .testimonials .pics, .testimonials img{
     display: none;
   }
 }
@@ -627,7 +630,15 @@ footer .text-super-small{
 @media only screen and (max-width: 360px) {
 
   .table{
-    height: 50rem;
+    position: static;
     margin: 0;
+    padding: 2rem;
+    width: auto;
+  }
+
+  .table svg{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 80%;
   }
 }

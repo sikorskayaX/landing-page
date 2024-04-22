@@ -78,3 +78,33 @@ header .title-picture{
   width: 12rem;
   margin-top: 1rem;
 }
+
+
+@media only screen and (max-width: 360px) {
+
+  .gallery {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery .photo:nth-child(odd) {
+    margin: 0;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .gallery .photo:nth-child(even) {
+    margin: 0;
+    padding-left: 40%;
+    padding-top: 50%;
+  }
+
+  .gallery .photo:nth-child(1), .gallery .photo:nth-child(2), .gallery .photo:nth-child(3), .gallery .photo:nth-child(4), .gallery .photo:nth-child(5){
+    position: static;
+    height: 20rem;
+    width: auto;
+    background-size: 80%;
+}
+
+}

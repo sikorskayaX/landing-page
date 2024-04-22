@@ -118,3 +118,47 @@ header .title-picture{
   border-radius: 2rem;
   cursor: pointer;
 }
+
+
+
+@media only screen and (max-width: 360px) {
+
+  .intro{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+  }
+  .intro div{
+    width: 100%;
+    position: static;
+    transform: none;
+    padding: 0;
+  }
+  .intro .contact{
+    padding: 1rem;
+  }
+  .intro .contact form {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .contact form div:last-child input{
+    width: 20rem;
+    height: 8rem;
+  }
+
+  .intro .contacts{
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .intro .pic{
+    display: none;
+  }
+
+
+}
+  

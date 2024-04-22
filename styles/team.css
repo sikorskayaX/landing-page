@@ -47,6 +47,29 @@ header .title-picture{
   width: 10rem;
 }
 
+@media only screen and (max-width: 360px) {
+
+  .team{
+    padding: 2rem 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.background{
+  height: 165rem;
+}
+
+.team .person{
+  margin: 2rem 2rem;
+}
+
+
+}
+
+
+
 /*testimonials*/
 
 .testimonials{
