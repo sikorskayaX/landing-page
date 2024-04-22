@@ -1,51 +1,12 @@
 ﻿@import url("style.css");
 
-header .wind{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-left: none;
-  height: 8rem;
-  width: 58%;
-  padding: 3rem;
-  margin-top: 3rem;
-  
-}
+/*picture for header*/
 
-header .wind p{
-  padding-left: 5.2rem;
-}
-  
-
-
-header div{
-  height: 20rem; 
+header .title-picture{
   background-image: url("../images/ap1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196,196, 196, 0) 56.77%);
-  background-color: rgba(94, 35, 157, 1);
-  background-blend-mode: multiply;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-header div h2{
-  padding-left: 8.2rem;
-  margin-bottom: 1rem;
-}
-header div p{
-  padding-left: 8.2rem;
-}
-.main{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 8.2rem; 
-}
-
 
   /*intro*/
-
 
 .intro {
   display: flex;
@@ -75,6 +36,23 @@ header div p{
 
 .title-small{
   padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 360px) {
+  .intro{
+    margin: 0;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .intro .what-head, .intro .conts, .intro .conts div p{
+    width: auto;
+  }
+
+  .intro .conts{
+    flex-direction: column;
+  }
+
 }
 
 /*what we do*/
@@ -123,6 +101,31 @@ header div p{
 }
 
 
+@media only screen and (max-width: 360px) {
+  .what-we-do .first-part{
+    padding: 0;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .what-we-do .second-part{
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+  }
+  .what-we-do .second-part div{
+    padding: 2rem;
+    flex-direction: column;
+}
+
+  .what-we-do .pic{
+    margin-top: -17rem;
+    position: static;
+    z-index: 10;
+  }
+
+}
+
 /*clients*/
 
 .clients{
@@ -144,6 +147,7 @@ header div p{
     flex-direction: column;
     justify-content: center;
     padding: 8%;
+    z-index: 2;
 }
 
 
@@ -153,6 +157,25 @@ header div p{
 
 .clients div:nth-child(2){
   display: flex;
+}
+
+@media only screen and (max-width: 360px) {
+
+  .clients aside{
+    height: auto;
+    margin: 0;
+    width: auto;
+    position: static;
+  }
+
+  .clients div:nth-child(1){
+    padding:2rem ; 
+}
+
+.clients .table{
+  height: 30rem;
+}
+
 }
 
 
@@ -188,6 +211,31 @@ header div p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 360px) {
+
+    .props{
+      position: relative;
+      padding: 1rem;
+      z-index: none;
+    }
+    .props .what-head h5{
+      width: auto;
+    }
+
+    .props .blocks{
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+    }
+
+    .props .blocks div{
+      margin: 1rem;
+      padding: 2rem;
+      height: auto;
+    }
+  
   }
 
 /*testimonials*/

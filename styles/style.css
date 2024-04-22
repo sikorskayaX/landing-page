@@ -211,6 +211,39 @@ a:visited {
 
 }
 
+/*header for pages*/
+
+header .title-picture{
+  height: 20rem; 
+  background-color: rgba(94, 35, 157, 1);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .title-picture h2{
+  padding-left: 8.2rem;
+  margin-bottom: 1rem;
+}
+
+header .title-picture p{
+  padding-left: 8.2rem;
+}
+
+@media only screen and (max-width: 360px) {
+  header .title-picture{
+    background-size: 200%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .title-picture p, header .title-picture h2{
+    padding: 0;
+    margin: 0;
+  }
+}
+
 
 /*newsletter*/
   
@@ -559,6 +592,13 @@ footer .text-super-small{
   margin-right: auto;
 }
 
+@media only screen and (max-width: 360px) {
+  .hat{
+    width: auto;
+    padding: 2rem;
+  }
+}
+
 /*table of logos*/
 
 .table {
@@ -581,4 +621,13 @@ footer .text-super-small{
   grid-column: 2;
   grid-row: 1;
   visibility: hidden;
+}
+
+
+@media only screen and (max-width: 360px) {
+
+  .table{
+    height: 50rem;
+    margin: 0;
+  }
 }

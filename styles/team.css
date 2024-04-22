@@ -1,42 +1,10 @@
 ﻿@import url("style.css");
     
-    header .wind{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-left: none;
-      height: 8rem;
-      width: 58%;
-      padding: 3rem;
-      margin-top: 3rem;
-      
-    }
-    
-    header .wind p{
-      padding-left: 5.2rem;
-    }
-    
-  
-  header div{
-      height: 20rem; 
-      background-image: url("../images/t1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-      background-color: rgba(94, 35, 157, 1);
-      background-blend-mode: multiply;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-  
-    header div h2{
-      padding-left: 8.2rem;
-      margin-bottom: 1rem;
-    }
-  
-    header div p{
-      padding-left: 8.2rem;
-    }
+/*picture for header*/
+
+header .title-picture{
+  background-image: url("../images/t1.png"), linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+}
 
 /*intro*/
 
