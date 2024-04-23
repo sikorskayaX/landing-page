@@ -80,15 +80,15 @@ nav ul li:nth-child(2){
     padding-left: 2rem;
   }
 
-  .main .scroll {
-    flex-direction: row; 
-}
 
   .main .scroll p {
     writing-mode: horizontal-tb; 
 }
 
-
+.main .scroll {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
   
 }
 
@@ -151,9 +151,16 @@ nav ul li:nth-child(2){
 @media only screen and (max-width: 360px) {
   .what-we-do article .txt{
     width: auto;
+    margin-bottom: 0;
   }
+  
   .what-we-do .icons{
     flex-direction: column;
+
+  }
+
+  .what-we-do .icons div{
+    width: auto;
   }
 }
   
@@ -198,6 +205,7 @@ nav ul li:nth-child(2){
 
 .features .open{
   margin-left: 10%;
+  padding-bottom: 6rem;
 }
 
 .features .buis{
@@ -229,30 +237,13 @@ nav ul li:nth-child(2){
     width: auto;
 
   }
-}
 
-/*numbers*/
-
-.numbers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10%; 
-  text-align: center;
-}
-
-.numbers .nums {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70%;
-  margin-top: 10%;
-}
-@media only screen and (max-width: 360px) {
-  .numbers .nums {
-    flex-direction: column;
+  .features .open{
+    margin: 2rem;
+    padding: 0;
   }
 }
+
 
 /*logos*/
 
@@ -264,7 +255,7 @@ nav ul li:nth-child(2){
 
 .logos .pic {
   background-image: url(../images/hm4.png);
-  background-size: 100%;
+  background-size: 80%;
   background-color: rgb(48, 18, 78, 1);
   background-blend-mode: darken;
   width: 50%;
