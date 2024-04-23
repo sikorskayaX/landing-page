@@ -17,10 +17,10 @@ body {
 h1 {
   font-size: 5.5rem; /* unchanged */
   font-weight: 900;
-  background: linear-gradient(to bottom, white 50%, rgba(246, 16, 103) 50%);
-  background-clip: text;
-  color: transparent;
+  line-height: 7rem;
 }
+
+
 
 h2, h3, h4, h5, h6 {
   font-weight: 500;
@@ -165,22 +165,32 @@ span{
 /*navigation light*/
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3.4rem 8.2rem; 
+  padding: 4% 10%;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 49rem;
 }
 
 nav ul li {
   display: flex;
   align-items: center;
+}
+
+
+nav ul li:first-child{
+  padding-right: 7rem;
+}
+
+
+nav ul li:nth-child(6){
+  padding: 0 2rem;
+}
+
+nav ul li:last-child{
+  padding-left: 5rem;
 }
 
 a:link {
@@ -195,7 +205,6 @@ a:visited {
 @media only screen and (max-width: 360px) {
   nav{
     flex-direction: column;
-    padding: 2rem;
     align-items: center;
   }
   nav ul{

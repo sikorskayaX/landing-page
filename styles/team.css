@@ -26,7 +26,7 @@ header .title-picture{
 .team{
     position: relative; 
     display: flex;
-    padding: 2rem 8.2rem;
+    padding: 2rem 10%;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
