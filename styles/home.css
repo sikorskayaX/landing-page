@@ -27,7 +27,7 @@ a:visited {
   color: white;
 }
 
-nav ul li:nth-child(2){
+.menu__elem_active{
   text-decoration: underline rgba(252, 252, 252, 1);
   text-underline-offset: 0.8rem;
   text-decoration-thickness: 1px;

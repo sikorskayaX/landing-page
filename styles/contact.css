@@ -162,4 +162,9 @@ header .title-picture{
 
 
 }
-  
+
+/*ftr*/
+
+footer{
+  background-color: rgba(48, 18, 78, 1);
+}
