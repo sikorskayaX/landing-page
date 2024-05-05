@@ -544,6 +544,10 @@ footer{
   color: rgba(252, 252, 252, 1);
 }
 
+.ftr__elem a:link{
+  color: rgba(252, 252, 252, 1);
+}
+
 .ftr__elem a:visited{
   color: rgba(252, 252, 252, 1);
 }
